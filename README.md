@@ -1,75 +1,61 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# StephenBeban.github.io
 
-![Academic Pages template example](images/themes/homepage-light.png "Academic Pages template example")
+The code for the website at https://stephenbeban.com. Build using the [AcademicPages](https://github.com/academicpages/academicpages.github.io) template.
 
-# Getting Started
+# Configuration
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+* **Page content** - (text etc) is stored in the [`_pages`](./_pages) folder
+    * These are files written in [Markdown](https://www.markdownguide.org/basic-syntax/). They can be edited with a simple text editor like Notepad
+* **Files** (CSVs, PDFs, etc) are stored in the [`files`](/files) folder
 
-See more info at https://academicpages.github.io/
+More info at https://academicpages.github.io/
+
+# Making changes
+
+There are two ways to make changes to the content of the website:
+
+1. Simply making changes <u>within the GitHub UI</u> 
+    - e.g. Go to the [about.md](https://github.com/StephenBeban/StephenBeban.github.io/blob/main/_pages/about.md) file, clicking the pencil ✏️ icon, making your changes, then saving them
+2. Making your changes locally
+    - More on this in the section below
 
 ## Running locally
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
+When working on the website, it can be useful to preview changes locally before pushing them to GitHub. To do this you will need to perform the following steps.
 
-1. Clone the repository and made updates as detailed above.
-
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change to Markdown (*.md) and HTML files, while changes to the core template and configuration (i.e., `_config.yml`) will require stoping and restarting Jekyll.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+Have this repository downloaded to a folder on your local computer.
 
 
-# Maintenance
+Have the Ruby programming language install. For Windows, the installer can be found on this page: https://rubyinstaller.org/downloads/ . Version **3.3.10** works well. Once you have downloaded this installer, run it and proceed through the installation wizard to install Ruby.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+When the installer is finished, verify you have Ruby installed by opening a **Terminal** and typing:
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+```
+ruby -v
+```
 
+This should give output something like `ruby 3.3.10 (2025-10-23 revision 343ea05002)`, confirming Ruby installed successfully.
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+After this, you want to install the software packages that will be used to run the website (e.g. the Jekyll package). To do this, open a new **Terminal** inside the `StephenBeban.github.io` folder by right-clicking inside the folder and clicking **Open in Terminal**.
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+Then inside the folder, type:
+
+```
+rake install
+```
+
+You should see output something like this:
+
+```
+Installing gem dependencies...
+bundle install
+[DEPRECATED] Platform :mingw, :mswin, :x64_mingw will be removed in the future. Please use platform :windows instead.
+Bundle complete! 9 Gemfile dependencies, 98 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+```
+
+Finally, to actually run the website on your local machine, run the command below and go to http://localhost:4000 - where you will see the local version of your website.
+
+```
+rake serve
+```
