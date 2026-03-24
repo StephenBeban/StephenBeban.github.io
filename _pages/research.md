@@ -4,12 +4,12 @@ title: "Research"
 author_profile: true
 ---
 
-{% include toc %}
+> **NB (2026 update): I am in the process of collecting and analyzing data for my thesis. I intend to upload the data after I have finished, which may be a couple more years away.**
 
+<!-- {% include toc %} -->
+## Proportionality and Representativeness in Electoral System Design: Insights from Comparative Analysis of 29 Democracies, 1990-2026 <!-- - [PDF]() | [read online]() -->
 
-## Proportionality and Representativeness in Electoral System Design: Insights from Comparative Analysis of 29 Democracies, 1990-2026 - [PDF]() | [read online]()
-
-My [MA/PhD] thesis explores how countries balance proportionality and representativeness (as well as government stability) in their electoral system designs, and whether could they do it better. 
+My thesis explores how countries balance proportionality and representativeness (as well as government stability) in their electoral system designs, and whether could they do it better. 
 
 I have done a comparative analysis of 29 countries over the last 35 years. This comprises half of the world’s liberal democracies. These include the most electoral systems: 
 
@@ -26,7 +26,10 @@ I have done a comparative analysis of 29 countries over the last 35 years. This 
 
 I also synthesised the successful features from those systems into a new electoral system: <u>Districted Proportional Representation</u> (DPR). I simulated the most recent election outcomes for the countries from my study as if they had had DPR in place. This verified my hypothesis that we can better optimize electoral outcomes compared to the systems currently in-use. 
 
+<!--
 
 ## Electoral Reform – Districted Proportional Representation - [PDF]() | [read online]()
 
 This think piece looks at the issues with New Zealand’s current electoral system specifically, and what it would look like if New Zealand used my DPR system. 
+
+-->
