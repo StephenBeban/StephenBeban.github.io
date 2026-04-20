@@ -1,0 +1,51 @@
+/* ==========================================================================
+    DEFAULT THEME - LIGHT VERSION
+    ========================================================================== */
+@import 'shared';
+
+/* Light theme color overrides */
+$primary-color-lt           : #2f7f93;
+
+/* Light theme specific colors */
+$background-lt              : $white;
+$footer-bg-lt               : $lighter-gray;
+// $dark-border-lt             : $light-gray;
+// $code-bg-lt                 : $white;
+
+$link-lt                    : #52adc8;
+$link-hover-lt              : mix($white, $primary-color-lt, 15%);
+$link-visited-lt            : mix($black, $primary-color-lt, 25%);
+
+/* Default light theme for the site */
+:root {
+    // Base color
+    --global-base-color                 : #{$primary-color-lt};
+
+    // Backgrounds
+    --global-bg-color                   : #{$white};
+    --global-footer-bg-color            : #{$footer-bg-lt};
+
+    // Text
+    --global-text-color                 : #{$dark-gray};
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{$lighter-gray};
+
+    // Borders
+    --global-border-color               : #{$lighter-gray};
+    --global-dark-border-color          : #{$light-gray};
+
+    // Links
+    --global-link-color                 : #{$link-lt};
+    --global-link-color-hover           : #{$link-hover-lt};
+    --global-link-color-visited         : #{$link-visited-lt};
+
+    // Masthead
+    --global-masthead-link-color        : #{$dark-gray};
+    --global-masthead-link-color-hover  : #5c6266; //mix(#000, #{$gray}, 25%);
+
+    // Code + figures
+    --global-code-background-color      : #{$white};
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #777a7d; // mix(#fff, $dark-gray, 25%);
+}
+

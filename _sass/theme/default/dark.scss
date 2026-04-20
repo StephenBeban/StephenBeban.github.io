@@ -1,0 +1,54 @@
+/* ==========================================================================
+    DEFAULT THEME - DARK VERSION
+    ========================================================================== */
+@import 'shared';
+
+/* Dark theme color overrides */
+$primary-color-dk           : #0ea1c5;
+
+/* Specific dark mode colors */
+$background-dk              : #474747;
+$background-light-dk        : mix($white, $background-dk, 80%);
+$background-lighter-dk      : mix($white, $background-dk, 90%);
+
+$text-dk                    : $white;
+$text-light-dk              : #f3f3f3;
+$link-dk                    : $primary-color-dk;
+$link-hover-dk              : mix($black, $link-dk, 25%);
+$link-visited-dk            : mix($white, $link-dk, 25%);
+
+$bg-code-color-dk           : #fafafa; 
+
+/* Dark theme for the site */
+html[data-theme="dark"] {
+    // Base color
+    --global-base-color                 : #{$primary-color-dk};
+
+    // Backgrounds
+    --global-bg-color                   : #{$background-dk};
+    --global-footer-bg-color            : #{$background-dk};
+
+    // Text
+    --global-text-color                 : #{$white};
+    --global-text-color-light           : #{$text-light-dk};
+    --global-thead-color                : #{$background-lighter-dk};
+
+    // Borders
+    --global-border-color               : #{$light-gray};
+    --global-dark-border-color          : #{$background-light-dk};
+
+    // Links
+    --global-link-color                 : #{$link-dk};
+    --global-link-color-hover           : #{$link-hover-dk};
+    --global-link-color-visited         : #{$link-visited-dk};
+
+    // Masthead
+    --global-masthead-link-color        : #{$text-dk};
+    --global-masthead-link-color-hover  : #{$primary-color-dk};
+
+    // Code + figures
+    --global-code-background-color      : #{$bg-code-color-dk};
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$light-gray};
+}
+

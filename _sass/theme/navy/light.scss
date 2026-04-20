@@ -1,0 +1,46 @@
+/* ==========================================================================
+    NAVY THEME - LIGHT VERSION
+    ========================================================================== */
+@import 'shared';
+
+/* Navy light specific colors */
+$primary-color-lt           : $navy-header;
+$link-lt                    : $navy-cobalt;
+$link-hover-lt              : mix($black, $navy-cobalt, 15%);
+$link-visited-lt            : mix($white, $navy-cobalt, 30%);
+
+/* Default light theme for the site */
+:root {
+    // Base color
+    --global-base-color                 : #{$primary-color-lt};
+
+    // Backgrounds
+    --global-bg-color                   : #{$white};
+    --global-footer-bg-color            : #{$lighter-gray};
+    --global-masthead-bg-color          : #{$navy-header};
+
+    // Text
+    --global-text-color                 : #{$dark-gray};
+    --global-text-color-light           : #{$light-gray};
+    --global-thead-color                : #{$lighter-gray};
+
+    // Borders
+    --global-border-color               : #{$navy-gold};
+    --global-dark-border-color          : #{$navy-gold-dark};
+
+    // Links
+    --global-link-color                 : #{$link-lt};
+    --global-link-color-hover           : #{$link-hover-lt};
+    --global-link-color-visited         : #{$link-visited-lt};
+
+    // Masthead
+    --global-masthead-bg-color          : #{$navy-header};
+    --global-masthead-link-color        : #{$white};
+    --global-masthead-link-color-hover  : #{$navy-gold};
+    --global-masthead-text-color        : #{$white};
+
+    // Code + figures
+    --global-code-background-color      : #{$lighter-gray};
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$gray};
+}

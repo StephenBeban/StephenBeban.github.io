@@ -6,21 +6,28 @@
 # `jekyll serve -l -H localhost`. If you change this file, please restart the 
 # server process.
 
+
 # Basic Site Settings
+# --------------------------------------------------------------------------- #
 locale                   : "en"
-site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
+# Available options : "default", "navy"
+site_theme               : "navy"
 title                    : "Stephen Beban"
 title_separator          : "&#124;"
 name                     : &name "Stephen Beban"
-description              : &description "Stephen Beban's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
-url                      : https://stephenbeban.com # The base hostname & protocol for your site e.g. "https://[your GitHub username].github.io",
-                                                           # or if you already have some other page hosted on Github then use "https://[your GitHub username].github.io/[Your Repo Name]"
+# A general description of the site, this is the default if not overridden by a page
+description              : &description "Stephen Beban's academic portfolio"   
+# The base address for your site e.g. "https://[GITHUB_USERNAME].github.io" or "https://[GITHUB_USERNAME].github.io/[REPO_NAME]"
+url                      : https://stephenbeban.com 
 baseurl                  : "/"
 repository               : "StephenBeban/StephenBeban.github.io"
 
-# Site Author - The following control what appear as part of the author content on the side bar.
-#               If a field is blank the icon and link will not appear, otherwise it will be shown.
-#               Additional customization can be done by editing /_includes/author-profile.html
+
+# Site Author
+# --------------------------------------------------------------------------- #
+# The following control what appear as part of the author content on the side bar.
+# If a field is blank the icon and link will not appear, otherwise it will be shown.
+# Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
   avatar           : "stephen-pic.jpg"
@@ -45,7 +52,6 @@ author:
   researchgate     : # URL
   scopus           : # URL
   zotero           : # URL
-
 
   # Repositories and software development
   bitbucket        : # Username - Update with your username on the site
@@ -82,7 +88,10 @@ author:
   youtube          : # Username
   zhihu            : # Username
 
-# Publication Category - The following the list of publication categories and their headings
+
+# Publication Category
+# --------------------------------------------------------------------------- #
+# The following the list of publication categories and their headings
 publication_category:
   books:
     title: 'Books'
@@ -91,7 +100,9 @@ publication_category:
   conferences:
     title: 'Conference Papers'
 
+
 # Site Settings
+# --------------------------------------------------------------------------- #
 teaser                   :  # filename of teaser fallback teaser image placed in /images/ for social media previews
 breadcrumbs              : false # true, false (default)
 words_per_minute         : 160
@@ -130,6 +141,7 @@ atom_feed:
 
 
 # SEO Related
+# --------------------------------------------------------------------------- #
 google_site_verification :
 bing_site_verification   :
 alexa_site_verification  :
@@ -137,6 +149,7 @@ yandex_site_verification :
 
 
 # Social Sharing
+# --------------------------------------------------------------------------- #
 twitter:
   username               : &twitter
 facebook:
@@ -154,6 +167,7 @@ social:
 
 
 # Analytics
+# --------------------------------------------------------------------------- #
 analytics:
   provider               :  "google-analytics-4" # false (default), "google", "google-universal", "google-analytics-4", "custom"
   google:
@@ -161,6 +175,7 @@ analytics:
 
 
 # Reading Files
+# --------------------------------------------------------------------------- #
 include:
   - .htaccess
   - _pages
@@ -200,6 +215,7 @@ markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
 
 # Conversion
+# --------------------------------------------------------------------------- #
 markdown: kramdown
 highlighter: rouge
 lsi: false
@@ -208,6 +224,7 @@ incremental: false
 
 
 # Markdown Processing
+# --------------------------------------------------------------------------- #
 kramdown:
   input: GFM
   hard_wrap: false
@@ -284,12 +301,14 @@ defaults:
 
 
 # Sass/SCSS
+# --------------------------------------------------------------------------- #
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
 # Outputting
+# --------------------------------------------------------------------------- #
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
@@ -297,6 +316,7 @@ timezone: Etc/UTC # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
+# --------------------------------------------------------------------------- #
 plugins:
   - jekyll-feed
   - jekyll-gist
@@ -316,6 +336,7 @@ whitelist:
 
 
 # Archives
+# --------------------------------------------------------------------------- #
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
@@ -345,6 +366,7 @@ tag_archive:
 
 
 # HTML Compression
+# --------------------------------------------------------------------------- #
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all

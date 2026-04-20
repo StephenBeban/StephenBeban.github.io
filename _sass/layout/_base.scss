@@ -38,10 +38,14 @@ h1 {
 
 h2 {
   font-size: $type-size-4;
+  padding-bottom: 0.3em;
+  border-bottom: 1px solid var(--global-border-color);
 }
 
 h3 {
   font-size: $type-size-5;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid var(--global-border-color);
 }
 
 h4 {

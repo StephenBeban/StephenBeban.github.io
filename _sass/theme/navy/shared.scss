@@ -1,0 +1,11 @@
+/* ==========================================================================
+    NAVY THEME - SHARED VARIABLES
+    ========================================================================== */
+@import '../default/shared';
+
+/* Navy theme color palette */
+$navy-royal-blue            : #080F5B;  // Deep background (dark mode body)
+$navy-header                : #0D19A3;  // Masthead / nav pane background
+$navy-cobalt                : #0047AB;  // ToC hover / accent
+$navy-gold                  : #E4C580;  // Borders, separators, headings
+$navy-gold-dark             : mix(#000, $navy-gold, 20%);  // Deeper gold for contrast

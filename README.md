@@ -30,7 +30,7 @@ Have the Ruby programming language install. For Windows, the installer can be fo
 
 When the installer is finished, verify you have Ruby installed by opening a **Terminal** and typing:
 
-```
+```shell
 ruby -v
 ```
 
@@ -40,13 +40,13 @@ After this, you want to install the software packages that will be used to run t
 
 Then inside the folder, type:
 
-```
+```shell
 rake install
 ```
 
 You should see output something like this:
 
-```
+```plaintext
 Installing gem dependencies...
 bundle install
 [DEPRECATED] Platform :mingw, :mswin, :x64_mingw will be removed in the future. Please use platform :windows instead.
@@ -56,6 +56,6 @@ Use `bundle info [gemname]` to see where a bundled gem is installed.
 
 Finally, to actually run the website on your local machine, run the command below and go to http://localhost:4000 - where you will see the local version of your website.
 
-```
+```shell
 rake serve
 ```

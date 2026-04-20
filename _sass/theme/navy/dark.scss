@@ -1,0 +1,52 @@
+/* ==========================================================================
+    NAVY THEME - DARK VERSION
+    ========================================================================== */
+@import 'shared';
+
+/* Navy dark specific colors */
+$primary-color-dk           : $navy-header;
+$background-dk              : $navy-royal-blue;
+$background-light-dk        : mix($white, $navy-royal-blue, 12%);
+$background-lighter-dk      : mix($white, $navy-royal-blue, 22%);
+
+$text-dk                    : $white;
+$text-light-dk              : #c8d0f0;  // Light blue-tinted white
+$link-dk                    : mix($white, $navy-cobalt, 45%);
+$link-hover-dk              : $navy-cobalt;
+$link-visited-dk            : mix($white, $navy-cobalt, 65%);
+
+/* Navy dark theme for the site */
+html[data-theme="dark"] {
+    // Base color
+    --global-base-color                 : #{$primary-color-dk};
+
+    // Backgrounds
+    --global-bg-color                   : #{$background-dk};
+    --global-footer-bg-color            : #{$background-dk};
+    --global-masthead-bg-color          : #{$primary-color-dk};
+
+    // Text
+    --global-text-color                 : #{$text-dk};
+    --global-text-color-light           : #{$text-light-dk};
+    --global-thead-color                : #{$background-lighter-dk};
+
+    // Borders
+    --global-border-color               : #{$navy-gold};
+    --global-dark-border-color          : #{$navy-gold-dark};
+
+    // Links
+    --global-link-color                 : #{$link-dk};
+    --global-link-color-hover           : #{$link-hover-dk};
+    --global-link-color-visited         : #{$link-visited-dk};
+
+    // Masthead
+    --global-masthead-bg-color          : #{$primary-color-dk};
+    --global-masthead-link-color        : #{$white};
+    --global-masthead-link-color-hover  : #{$navy-gold};
+    --global-masthead-text-color        : #{$white};
+
+    // Code + figures
+    --global-code-background-color      : #fafafa;
+    --global-code-text-color            : #{$darker-gray};
+    --global-fig-caption-color          : #{$light-gray};
+}

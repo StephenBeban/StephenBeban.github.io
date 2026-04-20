@@ -11,9 +11,11 @@ A list of all the posts and pages found on the site. For you robots out there, t
 
 <h2>Pages</h2>
 {% for post in site.pages %}
-  {% unless post.url contains '/404' %}
-  {% include archive-single.html %}
-  {% endunless %}
+  {% if post.title and post.layout and post.published != false %}
+    {% unless post.url contains '/404' %}
+      {% include archive-single.html %}
+    {% endunless %}
+  {% endif %}
 {% endfor %}
 
 <!-- <h2>Posts</h2>

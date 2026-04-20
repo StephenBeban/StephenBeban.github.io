@@ -2,6 +2,7 @@
    Various functions that we want to use within the template
    ========================================================================== */
 
+/* *
 // Determine the expected state of the theme toggle, which can be "dark", "light", or
 // "system". Default is "system".
 let determineThemeSetting = () => {
@@ -46,6 +47,7 @@ var toggleTheme = () => {
   localStorage.setItem("theme", new_theme);
   setTheme(new_theme);
 };
+/* */
 
 /* ==========================================================================
    Plotly integration script so that Markdown codeblocks will be rendered
@@ -90,6 +92,7 @@ $(document).ready(function () {
   const scssLarge = 925;          // pixels, from /_sass/_themes.scss
   const scssMastheadHeight = 70;  // pixels, from the current theme (e.g., /_sass/theme/_default.scss)
 
+  /* *
   // If the user hasn't chosen a theme, follow the OS preference
   setTheme();
   window.matchMedia('(prefers-color-scheme: dark)')
@@ -101,6 +104,7 @@ $(document).ready(function () {
 
   // Enable the theme toggle
   $('#theme-toggle').on('click', toggleTheme);
+  /* */
 
   // Enable the sticky footer
   var bumpIt = function () {

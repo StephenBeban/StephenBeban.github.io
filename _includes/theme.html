@@ -1,0 +1,61 @@
+<script>
+  // Determine the stored theme setting: "dark", "light", or "system" (default)
+  function determineThemeSetting() {
+    var s = localStorage.getItem("theme");
+    return (s === "dark" || s === "light" || s === "system") ? s : "system";
+  }
+
+  // Determine the computed theme: "dark" or "light"
+  function determineComputedTheme() {
+    var setting = determineThemeSetting();
+    if (setting !== "system") return setting;
+    return window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+  }
+
+  // Apply theme to <html> element as early as possible to prevent flash
+  (function () {
+    var theme = determineComputedTheme();
+    if (theme === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+    }
+  })();
+
+  // Set theme and update toggle icon
+  function setTheme(theme) {
+    var resolved = theme || localStorage.getItem("theme") ||
+      document.documentElement.getAttribute("data-theme") ||
+      (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+
+    var icon = document.getElementById("theme-icon");
+    if (resolved === "dark") {
+      document.documentElement.setAttribute("data-theme", "dark");
+      if (icon) { icon.classList.remove("fa-sun"); icon.classList.add("fa-moon"); }
+    } else {
+      document.documentElement.removeAttribute("data-theme");
+      if (icon) { icon.classList.remove("fa-moon"); icon.classList.add("fa-sun"); }
+    }
+  }
+
+  // Toggle between dark and light
+  function toggleTheme() {
+    var current = document.documentElement.getAttribute("data-theme");
+    var next = current === "dark" ? "light" : "dark";
+    localStorage.setItem("theme", next);
+    setTheme(next);
+  }
+
+  // Re-apply on full load (syncs icon state) and listen for OS preference changes.
+  // Note: the toggle button click binding is handled by main.min.js to avoid double-firing.
+  document.addEventListener("DOMContentLoaded", function () {
+    setTheme();
+
+    // Follow OS preference changes if user hasn't made an explicit choice
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", function (e) {
+      if (!localStorage.getItem("theme")) {
+        setTheme(e.matches ? "dark" : "light");
+      }
+    });
+  });
+</script>

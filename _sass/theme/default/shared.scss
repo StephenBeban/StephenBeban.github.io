@@ -1,0 +1,29 @@
+/* ==========================================================================
+    DEFAULT THEME - SHARED VARIABLES
+    ========================================================================== */
+
+/* Shared gray scale (derived from a common gray base) */
+$white                      : #fff;
+$lighter-gray               : #f2f3f3; // mix(#fff, $gray, 90%);
+$light-gray                 : #bdc1c4; // mix(#fff, $gray, 50%);
+$gray                       : #7a8288;
+$dark-gray                  : #494e52; // mix(#000, $gray, 40%);
+$darker-gray                : #313436; // mix(#000, $gray, 60%);
+$black                      : #000;
+
+/* Shared color codes used for the site */
+$danger-color               : #ee5f5b;
+$info-color                 : #2f7f93;
+$notice-color               : #7a8288;
+$success-color              : #62c462;
+$warning-color              : #f89406;
+
+/* Shared layout settings */
+$border-radius              : 4px;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125);
+$global-transition          : all 0.2s ease-in-out;
+$masthead-height            : 70px;
+$navicon-width              : 28px;
+$navicon-height             : 4px;
+$sidebar-link-max-width     : 230px;
+$sidebar-screen-min-width   : 1024px;

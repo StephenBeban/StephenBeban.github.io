@@ -1,5 +1,0 @@
-# Development overrides
-# This file is loaded after _config.yml when running `rake serve`
-# to override production settings for local development
-
-url: ""
