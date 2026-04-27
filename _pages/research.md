@@ -9,9 +9,9 @@ author_profile: true
 <!-- {% include toc %} -->
 ## Proportionality and Representativeness in Electoral System Design: Insights from Comparative Analysis of 29 Democracies, 1990-2026 <!-- - [PDF]() | [read online]() -->
 
-My thesis explores how countries balance proportionality and representativeness (as well as government stability) in their electoral system designs, and whether could they do it better. 
+My thesis is exploring how countries balance proportionality and representativeness (as well as government stability) in their electoral system designs, and whether could they do it better. 
 
-I have done a comparative analysis of 29 countries over the last 35 years. This comprises half of the world’s liberal democracies. These include the most electoral systems: 
+I have done a comparative analysis of 29 countries over the last 35 years (results available on my [Election Data page](./election-data)). This comprises half of the world’s liberal democracies. These include the most electoral systems: 
 
 - Majoritarian/Plurality formulae: 
   - First Past The Post (FPTP); 
