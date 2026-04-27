@@ -24,7 +24,7 @@ I have done a comparative analysis of 29 countries over the last 35 years. This 
   - National List-Proportional Representation (Nat. List-PR); 
   - Mixed-Member Proportional (MMP). 
 
-I also synthesised the successful features from those systems into a new electoral system: <u>Districted Proportional Representation</u> (DPR). I simulated the most recent election outcomes for the countries from my study as if they had had DPR in place. This verified my hypothesis that we can better optimize electoral outcomes compared to the systems currently in-use. 
+I will attempt to synthesise successful features from those systems into a new electoral system: <u>Districted Proportional Representation</u> (DPR). I will simulate its  outcomes using the most recent election results for the countries from my study. This aims to verify my hypothesis that we can better optimize electoral outcomes compared to the systems currently in-use. 
 
 <!--
 
