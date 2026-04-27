@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently working on my [Political Science thesis at Victoria University of Wellington](https://www.wgtn.ac.nz/hppi/psir/student-profiles/current-postgraduate-students/stephen-beban), with the supervision of Professor [Jack Vowles](http://www.jackvowles.com/). More details are available on my [Research page](./research). 
+I am currently working on my [Political Science PhD thesis at Victoria University of Wellington](https://www.wgtn.ac.nz/hppi/psir/student-profiles/current-postgraduate-students/stephen-beban), with the supervision of Professor [Jack Vowles](http://www.jackvowles.com/). More details are available on my [Research page](./research). 
 
 I have also been a [guest contributor to The Spinoff](https://thespinoff.co.nz/authors/stephen-beban), analysing New Zealand’s election results (2017-2026). 
 <!-- For the most recent elections, this was in collaboration with software engineer and data visualizer [Peter Scriven](https://pjpscriv.co.nz/).  -->
